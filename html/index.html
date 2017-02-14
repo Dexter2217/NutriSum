@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>title</title>
+	<link rel="stylesheet" href="../css/NutriSum.css" type="text/css">
+</head>
+
+<body>
+	<main>
+		<section class="profile-section">
+			<div class="profile-form">
+				<header>Create Profile</header>
+				<div class="form-group">
+					<label class="label" for="name">Age</label>
+					<input type="number" id="age" />
+				</div>
+				<div class="form-group">
+					<label class="label" for="name">Weight</label>
+					<input type="text" id="weight" />
+				</div>
+				<div class="form-group">
+					<label class="label" for="name">Height</label>
+					<span>
+					<input type="text" id="feet" placeholder="feet"/>
+					<input type="text" id="inches" placeholder="inches"/>
+				</span>
+				</div>
+				<div class="form-group">
+					<label>Male</label>
+					<input type="radio" name="sex" value="male">
+					<label>Female</label>
+					<input type="radio" name="sex" value="female">
+				</div>
+				<button type="submit" class="profile-submit">Save Profile</button>
+			</div>
+			<div>
+				<header>Your Profile</header>
+				<div>
+					<label>Your Age: </label>
+					<span id="current-age"></span>
+				</div>
+				<div>
+					<label>Your Weight: </label>
+					<span id="current-weight"></span>
+				</div>
+				<div>
+					<label>Your Height: </label>
+					<span id="current-height"></span>
+				</div>
+				<div>
+					<label>Current Caloric Intake: </label>
+					<span id="current-calories"></span>
+				</div>
+				<div>
+					<label>Current Fat Intake: </label>
+					<span id="current-fat"></span>
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<form id="manual-entry-form">
+				<header>Manual Item Entry</header>
+				<div class="form-group">
+					<label class="label" for="name">Item Name</label>
+					<input type="text" id="name" required/>
+				</div>
+				<div class="form-group">
+					<label class="label" for="calories">Calories</label>
+					<input type="text" id="calories" required/>
+				</div>
+				<div class="form-group">
+					<label class="label" for="fat">Fat</label>
+					<input type="text" id="fat" required/>
+				</div>
+				<div class="container-summary">
+					<button type "submit" id="manualAdd">Add to Intake</button>
+				</div>
+			</form>
+			<section>
+				<header>Daily Intake</header>
+				<ul class="intake-list">
+
+				</ul>
+			</section>
+		</section>
+
+		<section class="container">
+			<header>Search Item</header>
+			<div>
+				<label for="search">Search:</label>
+				<input type="text" id="search-box" />
+				<button type="button" id="search-button">Go</button>
+			</div>
+			<header>Results</header>
+			<ul class="results-list">
+
+			</ul>
+			<!--<table>
+				<tbody>
+					<tr>
+						<td>test</td>
+						<td>test</td>
+						<td>test</td>
+					</tr>
+					<tr>
+						<td>test</td>
+						<td>test</td>
+						<td>test</td>
+					</tr>
+					<tr>
+						<td>test</td>
+						<td>test</td>
+						<td>test</td>
+					</tr>
+				</tbody>
+			</table>-->
+		</section>
+
+	</main>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="../js/FoodLog.js" type="text/javascript"></script>
+	<script src="../js/SearchWidget.js" type="text/javascript"></script>
+	<script src="../js/NutriSum.js" type="text/javascript"></script>
+</body>
+
+</html>

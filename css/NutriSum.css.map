@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,gBAAiB;EACf,aAAa,EAAE,IAAI;;AAGrB,aAAc;EACb,aAAa,EAAE,IAAI;;AAEpB,UAAW;EACV,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,GAAG;EACV,cAAc,EAAE,GAAG;EACnB,aAAa,EAAE,IAAI;;AAGpB,MAAO;EACN,OAAO,EAAE,KAAK;;AAGf,WAAY;EACX,OAAO,EAAE,KAAK",
+"sources": ["../sass/NutriSum.scss"],
+"names": [],
+"file": "NutriSum.css"
+}
